@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This file is public domain in the USA and all free countries.
+# Elsewhere, consider it to be WTFPLv2. (wtfpl.net/txt/copying)
+
+read answer
+[[ $answer =~ ^("?youtube")$ ]] && echo "Naya nyari disini kak : https://en.wikipedia.org/wiki/youtube" || [[ $answer =~ ^("?metasploit")$ ]] && echo "Naya nyari disini kak : http://ondigitalforensics.weebly.com/cyber-attack/metasploit#.Wm1etxYxW-k" || echo "Naya nggak tahu kak... Mungkin ini? https://en.wikipedia.org/wiki/"$answer""
+exit
