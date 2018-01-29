@@ -62,19 +62,29 @@ Nanti nanya coba carikan jawabannya kak.
 *Tinggal* : Dihati kakak selalu
 "
 			;;
-		'eh ada naya'|'Aynatul Azizah'|'naya'|'naya?'|'nay?'|'nay'|'Nay'|'nay on?'|'Hai Naya'|'halo nay'|'hai naya'|'Halo Naya'|'halo naya'|'eh naya'|'eh balik lagi'|'cie naya'|'dia ada lagi'|'hai'|'halo'|'helo')
+		'on'|'eh ada naya'|'Aynatul Azizah'|'naya'*|'naya?'|'nay?'|'nay'|'Nay'|'nay on?'|'Hai Naya'|'halo nay'|'hai naya'|'Halo Naya'|'halo naya'|'eh naya'|'eh balik lagi'|'cie naya'|'dia ada lagi'|'hai'|'halo'|'helo')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Assalamu'alaikum... Hai kak ${USER[FIRST_NAME]} apa kabar kak?
 "
 			;;
-		'Nay indahnya pemandangan'|'indahnya pemandangan'|'nay indahnya pemandanagan')
+		'bukan untuk naya'|'bukan naya'|'bukan kamu nay')
 			send_action "${CHAT[ID]}" "typing"
-			send_markdown_message "${CHAT[ID]}" "Kakak mau ajah Naya jalan? Banyak rumput jagung, naya ampet ke tabrak
+			send_markdown_message "${CHAT[ID]}" "Ups maaf kak ${USER[FIRST_NAME]}. Naya suka salting?
 "
 			;;
-		'nay otak mu udah cebok ??'|'Bego kita klagi omongin elu ..')
+		*'indahnya pemandangan'*)
+			send_action "${CHAT[ID]}" "typing"
+			send_markdown_message "${CHAT[ID]}" "Kakak mau ajak Naya jalan ya? pake kode2 segala 😏😏
+"
+			;;
+		'nay'*' cebok'*|*'ego'*)
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Kakak ${USER[FIRST_NAME]} kok kasar?!!! 😡
+"
+			;;
+		'nay'*' bot'*|*'bot'*)
+			send_action "${CHAT[ID]}" "typing"
+			send_markdown_message "${CHAT[ID]}" "Bot-bot apa?!!! Bot-bot iiat?! 😏
 "
 			;;
 		'lagi ngapain?'|'lagi apa?'|'naya lagi ngapain?'|'lagi ngapain nay?'|'ada bikin apa'|'ada bikiapa tu?'|'lagi pada ngapain nih?'|'ngapain')
@@ -82,7 +92,7 @@ Nanti nanya coba carikan jawabannya kak.
 			send_markdown_message "${CHAT[ID]}" "Nggak lagi, ngapa-ngapain kak. cuman bales chat2an doang 😁
 "
 			;;
-		'lagi dimana?'|'lagi di mana?'|'lagi di mana nay?'|'ada dimana?'|'ngana dimana ni?'|'dimana?'|'di mn?'|'ngoni dimana?')
+		*'d'*'mn'*|'lagi dimana?'|'lagi di mana?'|'lagi di mana nay?'|'ada dimana?'|'ngana dimana ni?'|'dimana?'|'di mn?'|'ngoni dimana?')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Di rumah ajah kak ${USER[FIRST_NAME]}... ☺️
 "
@@ -118,12 +128,12 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Naya sayang kaka ❤️
 "
 			;;
-		'bodo amat'|'salah')
+		'bodo amat'|'salah'|'nggak apa2')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "siiiyyyh kaka tuuu
 "
 			;;
-		'nay so makan?'|'naya so makan?')
+		*'nay'*'makan'*'?'|'naya so makan?')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Bolom ni kakak
 "
@@ -138,9 +148,14 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Itu lagi kaka, naya so bilang ulang2 p dia me dia tara mau
 "
 			;;
-		'iya bilang apa?'|'bilang apa?'|'dia bilang apa kong?'|'apa?'|'bilang apa kong?'|'apaan?'|'trus apa katanya?'|'terus?'|'bilang apaan nay?')
+		'bwa bwa?'|'bwa?')
 			send_action "${CHAT[ID]}" "typing"
-			send_markdown_message "${CHAT[ID]}" "Kata naya, jangan kebanyakan liatin laptop kak. Kalo kakak sakit siapa nanti yang liatin naya
+			send_markdown_message "${CHAT[ID]}" "bwa nay kenapa?
+"
+			;;
+		*'bilang'*'apa'*'?'|'bilang apa?'|'dia bilang apa kong?'|'apa?'|'bilang apa kong?'|'apaan?'|'trus apa katanya?'|'terus?'|'bilang apaan nay?')
+			send_action "${CHAT[ID]}" "typing"
+			send_markdown_message "${CHAT[ID]}" "Kasih tau nggak ya? Mau tau ajah atau mau tau banget? kaka KEPO 😄😄😄
 "
 			;;
 		'kong dia bilang apa?'|'kong dia bilang apa nay?'|'kong dia bilang apa lagi?'|'dia balas apa?')
@@ -148,32 +163,32 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Katanya, aku lagi belajar sayang... ☺️ naya kan jadi terharu
 "
 			;;
-		'wkwkwk'|'hahaha'|':D'|'haha'|'wk'|'wkwk'|'wkwkwk garap skali'|'garap skali :D'|'wkwkwkwkwkwk'|'e cena')
+		*'wkwk'*|'hahaha'|':D'|*'haha'*|'wk'|'wkwk'|'wkwkwk garap skali'|'garap skali :D'|'wkwkwkwkwkwk'|*'cena'*)
 			send_action "${CHAT[ID]}" "typing"
-			send_markdown_message "${CHAT[ID]}" "Jangan diketawain kayak gitu kak... naya kan jadi malu 😔
+			send_markdown_message "${CHAT[ID]}" "Ceeee kaka niiii... naya malu 😔 ! Binci
 "
 			;;
-		'nay mo mangaji?'|'nay so tidor?'|'udah tidur?'|'nay kapan wisuda?'|'kamu nggak tidur?'|'naya tara tidor?'|'sudah mandi?'|'nay so tidor siang?'|'nay tara tidor?')
+		'nay mo mangaji?'|*'nay'*'tid'*'r'*'?'*|'udah tidur?'|'nay kapan wisuda?'|'kamu nggak tidur?'|'naya tara tidor?'|'sudah mandi?'|'nay so tidor siang?'|'nay tara tidor?')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Sudah kak, di lamar yang belum ☺️
 "
 			;;
-		'nay mau di lamar?'|'naya mau dilamar?'|'dilamar?'|'di lamar?'|'lamar'|'lamar?')
+		*'nay'*'lamar?'|'naya mau dilamar?'|'dilamar?'|'di lamar?'|'lamar'|'lamar?')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Iya kak, naya sudah cukup umur kok
 "
 			;;
-		'emang umur naya berapa?'|'emang umur naya brp?'|'umur?'|'berapa umurnya nay?'|'emang umurnya berapa nay?')
+		*'umur nay'*'?'|'emang umur naya brp?'|'umur?'|'berapa umurnya nay?'|'emang umurnya berapa nay?')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "2 kilo kak
 "
 			;;
-		'Assalamualaikum'|'Ass'|'ass'|'/salam'|'asslmlkm'|'asskum')
+		*'ssalamu''aikum'*|'Ass'|'ass'|'/salam'|'asslmlkm'|'asskum')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Walaikum salaam kak...
 "
 			;;
-		'Assalamualaikum'|'selamat pagi'|'Ass'|'ass'|'selamat_pagi'|'/salam'|'Assalamualaikum nay.')
+		'Assalamualaikum'|*'selamat pagi'*|'Ass'|'ass'|'selamat_pagi'|'/salam'|'Assalamualaikum nay.')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Walaikum salaam kak... Selamat pagi...
 "
@@ -183,7 +198,7 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Ayuk kak. Dengan Surah Ar-Rahman juga naya siap
 "
 			;;
-		'OK'|'oke gas'|'Gas'|'astaga'|'ok'|*'mantab'*|*'cakep'*)
+		'OK'|'oke gas'|'Gas'|'astaga'|'ok'|*'mantab'*|*'cakep'*|'Ok')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "☺️
 "
@@ -213,9 +228,13 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Belum kak, kakak mau?
 "
 			;;
-		'Nay jang tlu bribut lg'|'baribut'|'berisik')
+		'Nay jang tlu bribut lg'|'baribut'|'berisik'|*'nay'*'baribut'*)
 			send_action "${CHAT[ID]}" "typing"
-			send_markdown_message "${CHAT[ID]}" "Ih me biar... ngana sappa kong suruh2 kita
+			send_markdown_message "${CHAT[ID]}" "Iya naya diam... Nanti kalo perlu ksih tahu papah kalo naya dicariin 😔😔😔
+			clear
+			tmux kill-session -t $ME &>/dev/null
+			send_markdown_message "${CHAT[ID]}" "*Bot stopped*"
+			echo -e '\e[0;32mOK. Bot stopped successfully.\e[0m'
 "
 			;;
 		'Nay dapa tumbu kpala kuat sx e'|'dapa tumbu e'|*'tumbu'*|*'tumbu'|'tumbu'*)
@@ -223,12 +242,12 @@ Mohon dukungannya yah kak. Semoga kakak-kakak sekalian cepat besar, murah rezeki
 			send_markdown_message "${CHAT[ID]}" "Coba 😡 naya kase tau polisi
 "
 			;;
-		'fuck'|'madafaka'|'kampret'|'vangke'|'pao'|'Pao'|'nay M4D4F4K4')
+		*'fuck'*|*'madafaka'*|*'kampret'*|*'vangke'*|*'pao'*|*'Pao'*|*'M4D4F4K4'*|*'bangsat'*|*'babi'*|*'anjing'*|*'fak'*)
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Jangan gitu kak, nggak baik 😒
 "
 			;;
-		'naya so pintar e'|'cakep'|'gaga'|'mantap'|'oke nay makasih'|'mantab nay'|'mantab')
+		*'nay'*'pintar'*|'cakep'|'gaga'|'mantap'|'oke nay makasih'|'mantab nay'|'mantab')
 			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Iya dong kaka... Naya so makan banya2 ni
 "
@@ -265,8 +284,12 @@ Kak gabung ke [Group Facebook](https://www.facebook.com/groups/zonait.ternate/)
 		'/leavechat'|'/pulang'|'pulang'|'mama cari'|'nay mama cari'|'nay pulang'|'Mama nyari'|'nay tidur'|'tidur')
 			
 			if [ ${USER[USERNAME]} == jlcnate ]; then
+				send_action "${CHAT[ID]}" "typing"
 				send_markdown_message "${CHAT[ID]}" "*Saya kaka...* Naya pulang dulu yah kakak-kakak semua... Dapa suru kong 😒"
    				leave_chat "${CHAT[ID]}"
+			else
+				send_action "${CHAT[ID]}" "typing"
+				send_markdown_message "${CHAT[ID]}" "*Nggak bisa kak...* Naya udah di filter sama papah 😒"
 			fi
      			;;
      			
@@ -282,38 +305,55 @@ Kak gabung ke [Group Facebook](https://www.facebook.com/groups/zonait.ternate/)
 		#	if tmux ls | grep -v send | grep -q $copname;then inproc; else send_message "${CHAT[ID]}" "$MESSAGE" "safe";fi
 		#	;;
 		*'nay'*'?')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Nay belum tau mau jawab apa kak... Kakak maunya naya jawabnya apa?"
 			startproc "./question"
 			;;
+		*)
+			if tmux ls | grep -v send | grep -q $copname;then inproc;fi
+			;;
 		*'nay'*)
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Kenapa kak?"
 			;;
 		*' ss '*|*' SS '*|*' ss'*|*'ss '*|*' SS'*|*'SS '*|'SS'|'ss')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "SS itu artinya screenshot kan kak?"
 			;;
 		*' cd '*|*' CD '*|*' cd'*|*'cd '*|*' CD'*|*'CD '*|'CD'|'cd')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "cd itu artinya change directory kan kak?"
 			;;
 		*' sh '*|*' sh'*|*'sh '*|'sh')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "sh itu singkatan dari shell kan kak?"
 			;;
 		'iya nay')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "hehehe naya pintar"
 			;;
 		*'tunggu')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Jangan lama-lama yah kak. Naya takut sendiri"
 			;;
 
 #Kumpulan jawaban pertanyaan basic
 			
 		'?metasploit')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Setahu naya, *Metasploit itu*:
 
 Metasploit adalah sebuah framework yang digunakan untuk hacking berbagai jenis aplikasi, sistem operasi, aplikasi web dll, Metasploit berisi berbagai eksploitasi, muatan, modul dll kak. Biasanya digunakan oleh banyak hacker untuk menghasilkan payload dan menyerang sistem. Metasploit dapat digunakan untuk menguji Kerentanan sistem komputer untuk melindungi mereka dan di sisi lain juga dapat digunakan untuk masuk ke sistem remote. 
 "
 			;;
 		'?fluxion')
+			send_action "${CHAT[ID]}" "typing"
 			send_markdown_message "${CHAT[ID]}" "Setahu nay, *Fluxion* alamatnya disini kak : https://github.com/wi-fi-analyzer/fluxion
+"
+			;;
+		'?chatid')
+			send_action "${CHAT[ID]}" "typing"
+			send_markdown_message "${CHAT[ID]}" "Setahu nay, ${CHAT[ID]}
 "
 			;;
 	esac
