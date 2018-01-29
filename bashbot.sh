@@ -472,4 +472,3 @@ case "$1" in
 		echo -e '\e[0;31mAvailable arguments: outproc, count, broadcast, start, kill, help, attach\e[0m'
 		;;
 esac
-
