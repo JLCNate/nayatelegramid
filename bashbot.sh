@@ -17,7 +17,7 @@ if [ ! -f "JSON.sh/JSON.sh" ]; then
 fi
 
 #token
-token=392887079:AAGsYXH03snfEQM15o1mh43XVXYu1_HuehQ
+token=<YOUR TOKEN HERE>
 
 if [ ! -f "token" ]; then
 	clear
